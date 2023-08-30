@@ -40,7 +40,7 @@ def page_cells_visualizer_body():
 
     if st.checkbox("Image Montage"): 
       st.write("* To refresh the montage, click on the 'Create Montage' button")
-      my_data_dir = 'inputs/malaria_dataset/cell_images'
+      my_data_dir = '/workspaces/malaria_project/jupyter_notebooks/inputs/malaria_dataset/cell_images'
       labels = os.listdir(my_data_dir+ '/validation')
       label_to_display = st.selectbox(label="Select label", options=labels, index=0)
       if st.button("Create Montage"):      
